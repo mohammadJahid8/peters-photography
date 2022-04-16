@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Portraits",
+        "price": "99",
+        "description": "The thing I like to do the most and where I'm currently specialized in",
+        "img": "https://i.ibb.co/DbXj2yf/portrait.png"
+    },
+    {
+        "id": 2,
+        "name": "Wedding Photography",
+        "price": "199",
+        "description": "We provide high quality and cost effective Photography and Cinematography services.",
+        "img": "https://i.ibb.co/F3wBZ7X/wedding.png"
+    },
+    {
+        "id": 3,
+        "name": "Group Photos",
+        "price": "89",
+        "description": "Besides making portraits, I also make group photos for companies and friends",
+        "img": "https://i.ibb.co/kM6WRg4/group.png"
+    },
+    {
+        "id": 4,
+        "name": "Portfolio",
+        "price": "180",
+        "description": "Are you a model? Come on by, so we can compose an amazing portfolio together!",
+        "img": "https://i.ibb.co/4SN6Dgt/model.png"
+    }
+]
