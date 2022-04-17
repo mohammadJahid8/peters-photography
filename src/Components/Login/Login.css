@@ -1,0 +1,21 @@
+.login-form {
+    margin-top: 80px;
+
+    padding: 20px;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+
+@media only screen and (max-width: 576px) {
+    .login-form {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .login-form {
+        width: 50% !important;
+    }
+}
