@@ -14,13 +14,7 @@ const HomeAbout = () => {
                 <div className="description">
                     <div>
                         <h3 className="text">Hi, I'm Peter. Portrait photographer from Bangladesh.</h3>
-                        <p>I am a Passionate web developer with 0 years of experience creating solutions to clients' website
-                            needs
-                            seeking employment at SmartWeb where I can combine my experience in building web portals,
-                            applications and ecommerce websites to bring unique attributes to the organization.I am
-                            Self-motivated team player seeking a position as a lead web
-                            developer with Next Generation Web Development where I can apply my advanced knowledge of web
-                            design with my leadership abilities to meet client needs and exceed their expectations.</p>
+                        <p>I love to click mostly the natural ones or the ones that gives me a perfect satisfaction of where I am in. To get good shots, one needs to understand a few concepts of photography like lighting techniques, backgrounds, arrangements and so on, so that when the outcome is done, you get a wonderful shot. Practicing is another method to get your shots to the perfect, the more you practice on your choice of interest, the more better your shots would become. In order to make my shots good , I did take up short courses to learn in detail so that I understand how to take good shots and great snaps that look natural and wonderful.</p>
                         <Link to='/about'>More About me</Link>
                     </div>
                 </div>
