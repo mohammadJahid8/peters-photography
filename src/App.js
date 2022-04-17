@@ -7,6 +7,7 @@ import Checkout from './Components/Checkout/Checkout';
 import Header from './Components/Home/Header/Header';
 import HomePage from './Components/Home/HomePage/HomePage';
 import Login from './Components/Login/Login';
+import NothingFound from './Components/NothingFound/NothingFound';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import SignUp from './Components/SignUp/SignUp';
 
@@ -26,6 +27,7 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NothingFound></NothingFound>}></Route>
       </Routes>
 
     </div>
