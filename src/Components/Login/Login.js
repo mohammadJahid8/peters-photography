@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 const Login = () => {
@@ -93,8 +94,8 @@ const Login = () => {
     }, [user])
 
     return (
-        <div className="container w-25 mx-auto login-form">
-            <h2 className='text-primary text-center mt-4'>Please Login</h2>
+        <div className="container  mx-auto login-form ">
+            <h2 className=' text-center mt-3 mb-4 title'>Please Login</h2>
 
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -109,11 +110,12 @@ const Login = () => {
                     {errors?.passwordError && <p className="text-danger">{errors.passwordError}</p>}
                 </Form.Group>
 
-                <p>New to genius car? <Link to='/signup' className="text-primary">PLease Sign Up</Link></p>
+                <p>Don't have any account? <Link to='/signup' className="text-primary">PLease Sign Up</Link></p>
 
-                <Button variant="primary w-50 mx-auto d-block " type="submit">
+                <Button variant="dark w-50 mx-auto d-block " type="submit">
                     Login
                 </Button>
+                <SocialLogin />
                 <ToastContainer />
             </Form>
 

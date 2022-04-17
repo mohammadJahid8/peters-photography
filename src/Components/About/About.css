@@ -1,0 +1,23 @@
+/* .about-conten {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+} */
+.aboutMe-img {
+    width: 50% !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .aboutMe-img {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .aboutMe-img {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}

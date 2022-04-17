@@ -21,7 +21,7 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Welcome to Jahid Photography</h3>
+                    <h3>Welcome to Peter's Photography</h3>
                     <p>Capturing Life’s Priceless Moments..</p>
                 </Carousel.Caption>
             </Carousel.Item>
