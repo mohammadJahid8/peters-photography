@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Square+Peg&family=Ubuntu:wght@400;700&display=swap');
+
+
+
 .about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
 }
 
 .about-content img {
@@ -20,8 +25,8 @@
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
+    padding: 10px 25px;
+    margin-top: 8px;
     border-radius: 6px;
     border: 2px solid #3B3C36;
     transition: all 0.3s ease;
@@ -30,12 +35,21 @@
 
 .description p {
     text-align: justify;
+    font-size: 0.9em;
 }
 
 .description a:hover {
     color: #3B3C36;
     background: none;
 }
+
+.title {
+    color: #3B3C36;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+
+}
+
 
 @media only screen and (max-width: 576px) {
     .about-content {
@@ -44,6 +58,9 @@
 
     .about-content img {
         width: 100%;
+    }
+    .description a{
+        align-self: center;
     }
 }
 

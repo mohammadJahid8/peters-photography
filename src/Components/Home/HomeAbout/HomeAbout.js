@@ -12,7 +12,7 @@ const HomeAbout = () => {
                 </div>
                 <div className="description">
                     <div>
-                        <h2 className="text">Hi, I'm Jahid. Portrait photographer from Bangladesh.</h2>
+                        <h3 className="text">Hi, I'm Jahid. Portrait photographer from Bangladesh.</h3>
                         <p>I am a Passionate web developer with 0 years of experience creating solutions to clients' website
                             needs
                             seeking employment at SmartWeb where I can combine my experience in building web portals,
