@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -76,10 +76,7 @@ const Login = () => {
                 default:
                     toast('something went wrong')
                     break;
-
             }
-
-
         }
     }, [hookError]);
 
@@ -92,6 +89,18 @@ const Login = () => {
             navigate(from);
         }
     }, [user])
+
+    const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
+
+    const handleResetPassword = async () => {
+        if (userInfo.email) {
+            await sendPasswordResetEmail(userInfo.email);
+            toast('Password reset email sent');
+        }
+        else{
+            toast('Please enter your email');
+        }
+    }
 
     return (
         <div className="container  mx-auto login-form ">
@@ -109,9 +118,8 @@ const Login = () => {
                     <Form.Control onChange={passwordChange} type="password" placeholder="Password" required />
                     {errors?.passwordError && <p className="text-danger">{errors.passwordError}</p>}
                 </Form.Group>
-
+                <p>Forget Password? <Link to='/login' onClick={handleResetPassword} className="text-primary">Reset</Link></p>
                 <p>Don't have any account? <Link to='/signup' className="text-primary">PLease Sign Up</Link></p>
-
                 <Button variant="dark w-50 mx-auto d-block " type="submit">
                     Login
                 </Button>

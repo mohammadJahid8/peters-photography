@@ -105,7 +105,7 @@ const SignUp = () => {
             <Form onSubmit={handleSignup}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
 
-                    <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email"  />
+                    <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" />
                     {errors?.emailError && <p className="text-danger">{errors.emailError}</p>}
                 </Form.Group>
 
