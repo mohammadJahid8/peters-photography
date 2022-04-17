@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
+import './Banner.css'
 import banner1 from '../../../images/banner/banner1.png';
 import banner2 from '../../../images/banner/banner2.png';
 import banner3 from '../../../images/banner/banner3.png';
@@ -12,7 +13,7 @@ const Banner = () => {
     };
 
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel className='carousel' activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
