@@ -33,15 +33,16 @@
     text-decoration: none;
 }
 
+.description a:hover {
+    color: #3B3C36;
+    background: none;
+}
+
 .description p {
     text-align: justify;
     font-size: 0.9em;
 }
 
-.description a:hover {
-    color: #3B3C36;
-    background: none;
-}
 
 .title {
     color: #3B3C36;
@@ -59,7 +60,8 @@
     .about-content img {
         width: 100%;
     }
-    .description a{
+
+    .description a {
         align-self: center;
     }
 }

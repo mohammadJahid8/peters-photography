@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Square+Peg&family=Ubuntu:wght@400;700&display=swap');
+
 .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* margin: 0 auto; */
+    
     grid-gap: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.shoot-title {
+    color: #3B3C36;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
 

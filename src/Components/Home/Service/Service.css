@@ -1,8 +1,41 @@
-.service-card{
+.service-card {
     border: 1px solid lightgray;
     border-radius: 5px;
+    
 
 }
-.service-card img{
+
+.service-card img {
     width: 100%;
+}
+
+
+.service-card:hover {
+    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.service-card a {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    background: #3B3C36;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 8px;
+    /* border-radius: 6px; */
+    border: 2px solid #3B3C36;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.service-card a:hover {
+    color: #3B3C36;
+    background: none;
 }

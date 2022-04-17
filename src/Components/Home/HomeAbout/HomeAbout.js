@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import self2 from '../../../images/self2.jpg';
 import './HomeAbout.css'
 
@@ -20,7 +21,7 @@ const HomeAbout = () => {
                             Self-motivated team player seeking a position as a lead web
                             developer with Next Generation Web Development where I can apply my advanced knowledge of web
                             design with my leadership abilities to meet client needs and exceed their expectations.</p>
-                        <a href="#">More About me</a>
+                        <Link to='/about'>More About me</Link>
                     </div>
                 </div>
             </div>
