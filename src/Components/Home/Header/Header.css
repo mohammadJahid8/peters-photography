@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Square+Peg&family=Ubuntu:wght@400;700&display=swap');
+
 .nav-bar {
-    background:  #232B2B;
+    background: #232B2B;
+}
+
+#nav-title {
+
+    font-size: 22px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+.nav-bar a:hover {
+    color: white !important;
+
+}
+
+.link {
+    color: crimson !important;
+}
+
+.active-link {
+    color: white !important;
 }
