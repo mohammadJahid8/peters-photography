@@ -7,6 +7,14 @@
 
 }
 
+.error-msg {
+    color: red!important;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+
 
 @media only screen and (max-width: 576px) {
     .login-form {

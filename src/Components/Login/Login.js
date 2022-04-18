@@ -6,6 +6,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
+import Footer from '../Home/Footer/Footer';
+import Header from '../Home/Header/Header';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
@@ -97,37 +99,41 @@ const Login = () => {
             await sendPasswordResetEmail(userInfo.email);
             toast('Password reset email sent');
         }
-        else{
+        else {
             toast('Please enter your email');
         }
     }
 
     return (
-        <div className="container  mx-auto login-form ">
-            <h2 className=' text-center mt-3 mb-4 title'>Please Login</h2>
+        <>
+            <Header></Header>
+            <div className="container  mx-auto login-form ">
+                <h2 className=' text-center mt-3 mb-4 title'>Please Login</h2>
 
-            <Form onSubmit={handleLogin}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form onSubmit={handleLogin}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
 
-                    <Form.Control className='input' onChange={handleEmailChange} type="email" placeholder="Enter email" required />
-                    {errors?.emailError && <p className="text-danger">{errors.emailError}</p>}
-                </Form.Group>
+                        <Form.Control className='input' onChange={handleEmailChange} type="email" placeholder="Enter email" required />
+                        {errors?.emailError && <p className="error-msg">{errors.emailError}</p>}
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
 
-                    <Form.Control onChange={passwordChange} type="password" placeholder="Password" required />
-                    {errors?.passwordError && <p className="text-danger">{errors.passwordError}</p>}
-                </Form.Group>
-                <p>Forget Password? <Link to='/login' onClick={handleResetPassword} className="text-primary">Reset</Link></p>
-                <p>Don't have any account? <Link to='/signup' className="text-primary">PLease Sign Up</Link></p>
-                <Button variant="dark w-50 mx-auto d-block " type="submit">
-                    Login
-                </Button>
-                <SocialLogin />
-                <ToastContainer />
-            </Form>
+                        <Form.Control onChange={passwordChange} type="password" placeholder="Password" required />
+                        {errors?.passwordError && <p className="error-msg">{errors.passwordError}</p>}
+                    </Form.Group>
+                    <p>Forget Password? <Link to='/login' onClick={handleResetPassword} className="text-primary">Reset</Link></p>
+                    <p>Don't have any account? <Link to='/signup' className="text-primary">PLease Sign Up</Link></p>
+                    <Button variant="dark w-50 mx-auto d-block " type="submit">
+                        Login
+                    </Button>
+                    <SocialLogin />
+                    <ToastContainer />
+                </Form>
 
-        </div>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 
