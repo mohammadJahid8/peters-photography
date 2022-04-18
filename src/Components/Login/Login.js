@@ -55,8 +55,6 @@ const Login = () => {
         }
     }
 
-
-
     const handleLogin = (event) => {
         event.preventDefault();
         signInWithEmailAndPassword(userInfo.email, userInfo.password);
@@ -64,7 +62,6 @@ const Login = () => {
     }
     useEffect(() => {
         if (hookError) {
-
             switch (hookError?.code) {
                 case "auth/invalid-email":
                     toast('invalid email')

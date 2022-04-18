@@ -82,10 +82,7 @@ const SignUp = () => {
                     break;
                 default:
                     toast('something went wrong')
-
             }
-
-
         }
     }, [hookError]);
 
