@@ -3,8 +3,6 @@ import './App.css';
 import About from './Components/About/About';
 import Blog from './Components/Blogs/Blog';
 import Checkout from './Components/Checkout/Checkout';
-
-import Header from './Components/Home/Header/Header';
 import HomePage from './Components/Home/HomePage/HomePage';
 import Login from './Components/Login/Login';
 import NothingFound from './Components/NothingFound/NothingFound';
@@ -14,7 +12,7 @@ import SignUp from './Components/SignUp/SignUp';
 function App() {
   return (
     <div>
-      
+
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route path="/home" element={<HomePage></HomePage>}></Route>

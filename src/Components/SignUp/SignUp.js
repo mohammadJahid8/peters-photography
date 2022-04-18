@@ -109,23 +109,23 @@ const SignUp = () => {
                 <Form onSubmit={handleSignup}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
 
-                        <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" required />
+                        <Form.Control className='input' onChange={handleEmailChange} type="email" placeholder="Enter email" required />
                         {errors?.emailError && <p className="error-msg">{errors.emailError}</p>}
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control onChange={passwordChange} type="password" placeholder="Password" required />
+                        <Form.Control className='input' onChange={passwordChange} type="password" placeholder="Password" required />
                         {errors?.passwordError && <p className="error-msg">{errors.passwordError}</p>}
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="ConfirmPassword">
-                        <Form.Control onChange={confirmPasswordChange} type="password" placeholder="Confirm Password" required />
+                        <Form.Control className='input' onChange={confirmPasswordChange} type="password" placeholder="Confirm Password" required />
 
                     </Form.Group>
 
                     <p>Already have an account? <Link to='/login' className="text-primary">Login Instead</Link></p>
 
-                    <Button variant="dark w-50 mx-auto d-block " type="submit">
+                    <Button variant="dark w-50 mx-auto d-block " className='input' type="submit">
                         Sign Up
                     </Button>
                     <SocialLogin />

@@ -64,7 +64,7 @@ const Login = () => {
     }
     useEffect(() => {
         if (hookError) {
-            console.log(hookError);
+
             switch (hookError?.code) {
                 case "auth/invalid-email":
                     toast('invalid email')
@@ -119,12 +119,12 @@ const Login = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
 
-                        <Form.Control onChange={passwordChange} type="password" placeholder="Password" required />
+                        <Form.Control className='input' onChange={passwordChange} type="password" placeholder="Password" required />
                         {errors?.passwordError && <p className="error-msg">{errors.passwordError}</p>}
                     </Form.Group>
                     <p>Forget Password? <Link to='/login' onClick={handleResetPassword} className="text-primary">Reset</Link></p>
                     <p>Don't have any account? <Link to='/signup' className="text-primary">PLease Sign Up</Link></p>
-                    <Button variant="dark w-50 mx-auto d-block " type="submit">
+                    <Button variant="dark w-50 mx-auto d-block " type="submit" className='input'>
                         Login
                     </Button>
                     <SocialLogin />
