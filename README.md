@@ -14,7 +14,7 @@ Open [Peter's photography](https://assignment-10-5eb12.web.app/) to view it in y
 * Beside email and password User can also login through google or github too.
 * Some questions are answered in the blogs route.
 * There is also a about me route which consists of personal info.
-* At the end user will be redirected to 404 page if he tries to go any unknown page.
+* At the end user will be redirected to 404 page if he tries to go any unknown page...
 
 # Technologies used-
 * React js
