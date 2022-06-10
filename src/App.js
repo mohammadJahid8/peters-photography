@@ -11,7 +11,7 @@ import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   return (
-    <div>
+    <div className="max-width App">
 
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
